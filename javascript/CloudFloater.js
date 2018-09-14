@@ -23,8 +23,8 @@ $(document).ready(function () {
     var myX = randomIntFromInterval(0, dWidth);
     var myY = dHeight;
     var myZ = randomIntFromInterval(1,99);
-    var mySize = randomIntFromInterval((dHeight / 15), (dHeight / 2));
-    var myTime = randomIntFromInterval((dHeight / 120), (dHeight / 20));
+    var mySize = randomIntFromInterval((dHeight / 18), (dHeight / 4));
+    var myTime = randomIntFromInterval((dHeight / 120), (dHeight / 30));
     var myTimeMS = (myTime*1000);
     var myFadeIn = randomIntFromInterval(150,600);
 
@@ -32,7 +32,7 @@ $(document).ready(function () {
     console.log("Creating cloud " + myID + " at spot " + myX + " of size " + mySize + " with a movement speed of " + myTime + " seconds to move across the page");
 
     // Create cloud and fade in
-    $("body").append("<img id=\"" + myID + "\" style=\"position: absolute; z-index: " + myZ + "; height:" + mySize + "px; top:" + (myY) + "px; left:" + myX + "px;\" src=\"/cloud2.png\">");
+    $("body").append("<img id=\"" + myID + "\" style=\"position: absolute; z-index: " + myZ + "; height:" + mySize + "px; top:" + (myY) + "px; left:" + myX + "px;\" src=\"/images/docker2.png\">");
 
     // Float the cloud
     $("#" + myID).animate({
